@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.nuelle.mynotes.NoteActivity">
+    android:background="@drawable/unspecified"
+    tools:context="com.example.nuelle.mynotes.NoteActivity"
+    >
 
     <EditText
         android:id="@+id/noteTitle"
@@ -13,17 +15,18 @@
         android:layout_height="wrap_content"
         android:hint="Title of note"
         android:inputType="textPersonName"
-        android:scrollbarAlwaysDrawHorizontalTrack="false"
-        android:singleLine="true" />
+        android:maxLength="40"
+        android:textColor="#6C5F56"
+        />
 
     <EditText
         android:id="@+id/noteContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:ems="10"
-        android:gravity="top"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
         android:hint="Content of note"
-        android:inputType="textPersonName"
-        android:singleLine="false" />
+        android:textColor="#4E4945"
+        />
 </LinearLayout>
 

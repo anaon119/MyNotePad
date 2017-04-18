@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:orientation="vertical"
+    android:id="@+id/activity_note"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFEBDD"
     tools:context="com.example.nuelle.mynotes.MainActivity">
 
-    <ListView android:layout_height="fill_parent"
-        android:layout_width="fill_parent"
+    <ListView android:layout_height="match_parent"
+        android:layout_width="match_parent"
         android:id="@+id/mainList"
         />
 </LinearLayout>
