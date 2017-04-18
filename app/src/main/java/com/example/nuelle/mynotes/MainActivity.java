@@ -21,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         nListViewNotes = (ListView) findViewById(R.id.mainList);
+
     }
 
     @Override
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<Note> notes = Utilities.getAllSavedNotes(this);
 
-        if(notes == null && notes.size() == 0){
+        if(notes == null || notes.size() == 0){
             Toast.makeText(this, "You have no saved notes!", Toast.LENGTH_SHORT).show();
             return;
         }else{

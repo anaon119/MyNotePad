@@ -42,7 +42,7 @@ public class Note implements Serializable{
     public String getDateTimeAsString(Context context) {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss"
                 , context.getResources().getConfiguration().locale);
-        formatter.setTimeZone(getDefault());
+        formatter.setTimeZone(getTimeZone("Russia/Moscow"));
         return formatter.format(new Date(nDataTime));
     }
     public String getTitle(){
